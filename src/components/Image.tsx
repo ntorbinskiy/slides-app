@@ -1,18 +1,31 @@
-import React from "react";
-import G200 from "../images/g-200.svg";
+import React, { useState } from "react";
+
+import Triangle from "../images/big-ocean-triangle.svg";
+import InfoIcon from "../images/info-icon.svg";
+import HomeIcon from "../images/home-icon.svg";
+import HeaderTriangle from "../images/small-ocean-triangle.svg";
 
 export const enum ImageType {
-  Slide1_1,
+  FooterTriangle,
+  FooterInfoIcon,
+  FooterHomeIcon,
+  HeaderTriangle,
 }
 
 export type Props = {
   readonly type: ImageType;
+  readonly className?: string;
 };
 
 const typeToUrl: Record<ImageType, string> = {
-  [ImageType.Slide1_1]: G200,
+  [ImageType.FooterTriangle]: Triangle,
+  [ImageType.FooterInfoIcon]: InfoIcon,
+  [ImageType.FooterHomeIcon]: HomeIcon,
+  [ImageType.HeaderTriangle]: HeaderTriangle,
 };
 
-export const Image: React.FC<Props> = (props) => {
-  return <img src={typeToUrl[props.type]} />;
-};
+const ImageSVG: React.FC<Props> = (props) => (
+  <img src={typeToUrl[props.type]} className={props.className} />
+);
+
+export default ImageSVG;
