@@ -72,8 +72,10 @@ body {
   display: grid;
   position: absolute;
   bottom: 33px;
+  left: 46px;
   align-items: center;
-  grid-template-columns: 3% 80%;
+  grid-template-columns: 43px 80%;
+  gap: 10px;
 }
 
 .footer-line {
@@ -250,4 +252,9 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 56px;
+}
+
+.content-09 {
+  display: flex;
+  justify-content: center;
 }

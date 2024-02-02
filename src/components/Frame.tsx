@@ -26,7 +26,7 @@ const Frame: React.FC<Props> = (props) => {
         />
         {props.children}
       </div>
-      <FooterInfo text={props.footerText} />
+      <FooterInfo text={props.footerText} hideFooterTriangle />
     </>
   );
 };

@@ -2,7 +2,8 @@ import React from "react";
 import ImageSVG, { ImageType } from "./Image";
 
 interface Props {
-  text: string;
+  readonly text: string;
+  readonly hideFooterTriangle?: boolean;
 }
 
 const FooterInfo: React.FC<Props> = (props) => (
@@ -13,14 +14,13 @@ const FooterInfo: React.FC<Props> = (props) => (
     </div>
 
     <div className="footer-line"></div>
-    <ImageSVG
-      type={ImageType.FooterHomeIcon}
-      className="footer-home-icon"
-    ></ImageSVG>
-    <ImageSVG
-      type={ImageType.FooterTriangle}
-      className="big-ocean-triangle"
-    ></ImageSVG>
+    <ImageSVG type={ImageType.FooterHomeIcon} className="footer-home-icon" />
+    {props.hideFooterTriangle ?? (
+      <ImageSVG
+        type={ImageType.FooterTriangle}
+        className="big-ocean-triangle"
+      />
+    )}
   </>
 );
 
