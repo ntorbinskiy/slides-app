@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 body {
   font-family: Montserrat;
 }
@@ -16,7 +17,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 56%;
   grid-template-areas:
     "title description"
     "divider divider";
@@ -222,4 +223,31 @@ body {
   border-width: 0 4px 4px 0;
   border-radius: 3px;
   transform: rotate(-45deg);
+}
+
+.groupIcon {
+  display: flex;
+  background: rgb(210, 240, 240);
+}
+
+.groupIcon1 {
+  justify-content: flex-start;
+  padding: 46px 76px 23px 132px;
+  border-radius: 376px 0px 0px 376px;
+}
+
+.groupIcon2 {
+  border-radius: 0 376px 376px 0;
+
+  position: relative;
+  right: 46px;
+  padding: 77px 32px 77px 145px;
+}
+
+.ergoferon-course-08 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 56px;
 }

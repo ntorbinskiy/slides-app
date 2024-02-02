@@ -1,0 +1,37 @@
+@media screen and (max-width: 1300px) {
+  .blue-rounded-box-text-1,
+  .blue-rounded-box-text-2 {
+    font-size: 20px;
+  }
+
+  .ergoferon-diagram-07 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .slide-08-shield {
+    width: 300px;
+  }
+
+  .slide-08-groupIcon1 {
+    width: 600px;
+  }
+
+  .slide-08-2-groupIcon {
+    width: 300px;
+  }
+
+  .groupIcon1 {
+    justify-content: flex-start;
+    padding: 51px 20px 42px 20px;
+    border-radius: 376px 0px 0px 376px;
+  }
+
+  .groupIcon2 {
+    border-radius: 0 376px 376px 0;
+
+    position: relative;
+    right: 46px;
+    padding: 28px 20px 39px 20px;
+  }
+}

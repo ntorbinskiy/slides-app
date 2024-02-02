@@ -7,17 +7,18 @@ interface Props {
   readonly headerTitle: string;
   readonly headerDescription: React.ReactNode;
   readonly upperCase?: boolean;
+  readonly bodyStyles?: Object;
 
   readonly footerText: string;
 
   readonly hideFooterTriangle?: boolean;
-  readonly children: JSX.Element[];
+  readonly children: JSX.Element[] | JSX.Element;
 }
 
 const Frame: React.FC<Props> = (props) => {
   return (
     <>
-      <div className="content">
+      <div className="content" style={props.bodyStyles}>
         <Header
           title={props.headerTitle}
           description={props.headerDescription}

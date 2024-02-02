@@ -7,12 +7,23 @@ import HeaderTriangle from "../images/small-ocean-triangle.svg";
 
 import Slide_07_Diagram from "../images/07-ergoferon-diagram.svg";
 
+import Slide_08_shield from "../images/08-shield.svg";
+import Slide_08_groupIcon1 from "../images/08-icon-group-1.svg";
+import Slide_08_2_Icon1 from "../images/08-1-icon-item-2.svg";
+import Slide_08_2_Icon2 from "../images/08-2-icon-item-2.svg";
+import Slide_08_2_Icon3 from "../images/08-3-icon-item-2.svg";
+
 export const enum ImageType {
   FooterTriangle,
   FooterInfoIcon,
   FooterHomeIcon,
   HeaderTriangle,
   Slide_07_Diagram,
+  Slide_08_shield,
+  Slide_08_groupIcon1,
+  Slide_08_2_Icon1,
+  Slide_08_2_Icon2,
+  Slide_08_2_Icon3,
 }
 
 export type Props = {
@@ -26,6 +37,11 @@ const typeToUrl: Record<ImageType, string> = {
   [ImageType.FooterHomeIcon]: HomeIcon,
   [ImageType.HeaderTriangle]: HeaderTriangle,
   [ImageType.Slide_07_Diagram]: Slide_07_Diagram,
+  [ImageType.Slide_08_shield]: Slide_08_shield,
+  [ImageType.Slide_08_groupIcon1]: Slide_08_groupIcon1,
+  [ImageType.Slide_08_2_Icon1]: Slide_08_2_Icon1,
+  [ImageType.Slide_08_2_Icon2]: Slide_08_2_Icon2,
+  [ImageType.Slide_08_2_Icon3]: Slide_08_2_Icon3,
 };
 
 const ImageSVG: React.FC<Props> = (props) => (

@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles.css";
-import Frame from "../components/Frame";
-import BlueText from "../components/BlueText";
-import SubTitle from "../components/SubTitle";
-import ImageSVG, { ImageType } from "../components/Image";
-import ColorBlock, { Color } from "../components/ColorBlocks";
+import "../../root.css";
+import Frame from "../../components/Frame";
+import BlueText from "../../components/BlueText";
+import SubTitle from "../../components/SubTitle";
+import ImageSVG, { ImageType } from "../../components/Image";
+import ColorBlock, { Color } from "../../components/ColorBlocks";
 
 const colors: Color[] = [
   {
