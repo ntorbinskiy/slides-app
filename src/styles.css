@@ -105,5 +105,121 @@ body {
   color: #008083;
   font-size: 30px;
   font-weight: 500;
-  padding-top: 66px;
+  padding-top: 45px;
+}
+
+.ergoferon-diagram-07 {
+  width: 500px;
+  height: 500px;
+}
+
+.blue-rounded-box {
+  background: rgb(206, 237, 255);
+  padding: 35px 109px 52px 90px;
+  bottom: 27px;
+}
+
+.blue-rounded-box-first {
+  border-radius: 0 376px 376px 0;
+  position: relative;
+  right: 46px;
+}
+
+.blue-rounded-box-second {
+  border-radius: 376px 0px 0px 376px;
+  position: relative;
+  left: 46px;
+}
+
+.blue-rounded-box-text-1,
+.blue-rounded-box-text-1 > * {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: none;
+}
+
+.blue-rounded-box-text-2,
+.blue-rounded-box-text-2 > * {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.light-blue-text {
+  font-weight: 700;
+  background: -webkit-linear-gradient(rgb(16, 145, 218), rgb(125, 197, 237));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.diagram-box-07 {
+  display: grid;
+  grid-template-columns: auto auto 0% auto;
+  align-items: center;
+}
+
+.colors {
+  display: flex;
+  gap: 31px;
+  margin-top: 37px;
+  margin-left: 39px;
+}
+
+.color {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.color-block {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+}
+
+.color-name {
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.colors-07 {
+  justify-content: center;
+}
+
+.arrow {
+  position: relative;
+  bottom: 83px;
+  right: 10px;
+
+  width: 79px;
+  height: 5px;
+  background: rgb(10, 122, 185);
+  z-index: 1;
+}
+
+.circle {
+  position: absolute;
+  top: -8px;
+  left: -13px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(10, 122, 185);
+}
+
+.arrow-lines {
+  position: absolute;
+  right: 0px;
+  top: -6px;
+
+  display: inline-block;
+  padding: 7px;
+
+  border: solid rgb(10, 122, 185);
+  border-width: 0 4px 4px 0;
+  border-radius: 3px;
+  transform: rotate(-45deg);
 }

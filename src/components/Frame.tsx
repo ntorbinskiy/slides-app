@@ -4,18 +4,27 @@ import Header from "./Header";
 import FooterInfo from "./FooterInfo";
 
 interface Props {
-  readonly hideFooterTriangle?: boolean;
   readonly headerTitle: string;
   readonly headerDescription: React.ReactNode;
+  readonly upperCase?: boolean;
+
   readonly footerText: string;
-  readonly children: JSX.Element;
+
+  readonly hideFooterTriangle?: boolean;
+  readonly children: JSX.Element[];
 }
 
 const Frame: React.FC<Props> = (props) => {
   return (
     <>
-      <Header title={props.headerTitle} description={props.headerDescription} />
-      {props.children}
+      <div className="content">
+        <Header
+          title={props.headerTitle}
+          description={props.headerDescription}
+          upperCase={props.upperCase}
+        />
+        {props.children}
+      </div>
       <FooterInfo text={props.footerText} />
     </>
   );
