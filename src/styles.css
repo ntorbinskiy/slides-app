@@ -473,7 +473,7 @@ body {
   right: 410px;
 }
 
-.content-20 {
+.content-22 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,7 +481,7 @@ body {
   gap: 63px;
 }
 
-.content-20-colors {
+.content-22-colors {
   position: relative;
   right: 230px;
 }

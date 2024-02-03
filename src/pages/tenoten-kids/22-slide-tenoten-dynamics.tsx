@@ -39,9 +39,9 @@ const Page: React.FC = ({}) => {
         <br /> Тенотен дитячий, в період вікових кризів
       </SubTitle>
 
-      <div className="content-20">
-        <ImageSVG type={ImageType.Slide_20_1} />
-        <ColorBlock colors={colors} className="content-20-colors" />
+      <div className="content-22">
+        <ImageSVG type={ImageType.Slide_22_1} />
+        <ColorBlock colors={colors} className="content-22-colors" />
       </div>
     </Frame>
   );
