@@ -117,7 +117,15 @@
   .slide_30_2,
   .slide_11_7,
   .slide_11_6,
-  .slide_31_2 {
+  .slide_31_2,
+  .slide_37_2 {
     display: none;
+  }
+
+  .content-37-colors {
+    position: relative;
+    flex-direction: column;
+    bottom: 13px;
+    left: -276px;
   }
 }

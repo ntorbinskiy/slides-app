@@ -20,6 +20,7 @@ interface Props {
   readonly bodyStyles?: Object;
 
   readonly footerText: React.ReactNode;
+  readonly footerStyle?: Object;
 
   readonly hideFooterTriangle?: boolean;
   readonly kids?: boolean;
@@ -42,6 +43,7 @@ const Frame: React.FC<Props> = (props) => (
       text={props.footerText}
       hideFooterTriangle={props.hideFooterTriangle}
       pageColor={props.pageColor}
+      footerStyle={props.footerStyle}
     />
   </>
 );

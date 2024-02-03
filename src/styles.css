@@ -532,3 +532,23 @@ body {
   top: 30px;
   right: 500px;
 }
+
+.content-37 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide_37_2 {
+  position: absolute;
+  top: 47px;
+  right: 57px;
+}
+
+.content-37-colors {
+  position: absolute;
+  flex-direction: column;
+  bottom: 50px;
+  left: 130px;
+}
