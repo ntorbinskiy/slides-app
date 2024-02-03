@@ -13,13 +13,11 @@ const Color: FC<Color> = (props) => (
 );
 
 interface ColorBlocksProps {
-  colorAmount: number;
   colors: Color[];
   className?: string;
 }
 
 const ColorBlock: FC<ColorBlocksProps> = (props) => {
-  console.log(props.colors);
   return (
     <div className={`colors ${props.className}`}>
       {props.colors.map((color) => (
