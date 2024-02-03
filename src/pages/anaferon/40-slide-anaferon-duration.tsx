@@ -25,7 +25,7 @@ const Page: React.FC = ({}) => {
       headerTitle="АНАФЕРОН"
       headerDescription={<>скорочує тривалість симптомів грві</>}
       footerText={
-        <ol>
+        <ol style={{ lineHeight: "140%" }}>
           <li>
             {" "}
             Мокія-Сербіна С. А., Чечель В. В., Заболотна Н. И. Гомеопатичні

@@ -25,7 +25,7 @@ const Page: React.FC = ({}) => {
       headerTitle="АНАФЕРОН"
       headerDescription={<>скорочує тривалість симптомів грві</>}
       footerText={
-        <ol>
+        <ol style={{ lineHeight: "140%" }}>
           <li>
             Мокія-Сербіна С. А., Чечель В. В., Заболотна Н. И. Гомеопатичні
             препарати у профілактиці та лікуванні ГРВІ у дітей:
@@ -40,7 +40,7 @@ const Page: React.FC = ({}) => {
           </li>
         </ol>
       }
-      footerStyle={{ position: "absolute", right: "240px", left: "auto" }}
+      footerStyle="content-37-footer"
       upperCase
       kids
     >

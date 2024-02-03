@@ -570,6 +570,14 @@ body {
 }
 
 .content-40-footer {
-  bottom: 102px;
+  bottom: 75px;
   left: 500px;
+  align-items: flex-start;
+}
+
+.content-37-footer {
+  align-items: flex-start;
+  position: absolute;
+  right: 240px;
+  left: auto;
 }
