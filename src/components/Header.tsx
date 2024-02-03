@@ -7,6 +7,7 @@ interface Props {
   readonly description: React.ReactNode;
   readonly upperCase?: boolean;
   readonly pageColor: PageColor;
+  readonly kids?: boolean;
 }
 
 export const colors = {
@@ -34,6 +35,7 @@ const Header: React.FC<Props> = (props) => {
       <div className="header">
         <h1 className="header-title" style={{ color: colors[props.pageColor] }}>
           {props.title}
+          {props.kids && <span>Дитячий</span>}
         </h1>
         <span
           className="header-description"

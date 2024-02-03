@@ -22,6 +22,7 @@ interface Props {
   readonly footerText: string;
 
   readonly hideFooterTriangle?: boolean;
+  readonly kids?: boolean;
   readonly children: JSX.Element[] | JSX.Element;
 }
 
@@ -33,6 +34,7 @@ const Frame: React.FC<Props> = (props) => (
         description={props.headerDescription}
         upperCase={props.upperCase}
         pageColor={props.pageColor}
+        kids={props.kids}
       />
       {props.children}
     </div>

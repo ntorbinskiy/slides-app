@@ -104,4 +104,12 @@
   .content-18 > img {
     width: 905px;
   }
+
+  .content-20 > img {
+    width: 900px;
+  }
+
+  .content-20-colors {
+    right: 67px;
+  }
 }
