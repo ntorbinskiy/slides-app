@@ -19,6 +19,7 @@ const Page: React.FC = ({}) => {
       }
       footerText="Є.В.Зубов, О.А.Єршова Можливості терапії корекції вегетативної дисфункції синусового вузла в педіатрії. Педіатрія. 2010 Том 89. №3"
       pageColor="tenotenKids"
+      kids
     >
       <ImageSVG type={ImageType.Slide_25_2} className="hearts-25" />
       <SubTitle pageColor="tenotenKids">
