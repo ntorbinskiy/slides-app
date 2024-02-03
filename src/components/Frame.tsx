@@ -3,7 +3,17 @@ import Header from "./Header";
 
 import FooterInfo from "./FooterInfo";
 
+export type PageColor =
+  | "ergoferon"
+  | "rengalin"
+  | "tenoten"
+  | "tenotenKids"
+  | "anaferon"
+  | "anaferonKids";
+
 interface Props {
+  readonly pageColor: PageColor;
+
   readonly headerTitle: string;
   readonly headerDescription: React.ReactNode;
   readonly upperCase?: boolean;
@@ -15,20 +25,23 @@ interface Props {
   readonly children: JSX.Element[] | JSX.Element;
 }
 
-const Frame: React.FC<Props> = (props) => {
-  return (
-    <>
-      <div className="content" style={props.bodyStyles}>
-        <Header
-          title={props.headerTitle}
-          description={props.headerDescription}
-          upperCase={props.upperCase}
-        />
-        {props.children}
-      </div>
-      <FooterInfo text={props.footerText} hideFooterTriangle />
-    </>
-  );
-};
+const Frame: React.FC<Props> = (props) => (
+  <>
+    <div className="content" style={props.bodyStyles}>
+      <Header
+        title={props.headerTitle}
+        description={props.headerDescription}
+        upperCase={props.upperCase}
+        pageColor={props.pageColor}
+      />
+      {props.children}
+    </div>
+    <FooterInfo
+      text={props.footerText}
+      hideFooterTriangle={props.hideFooterTriangle}
+      pageColor={props.pageColor}
+    />
+  </>
+);
 
 export default Frame;

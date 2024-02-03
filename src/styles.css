@@ -17,7 +17,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: auto 56%;
+  grid-template-columns: auto 67%;
   grid-template-areas:
     "title description"
     "divider divider";
@@ -61,7 +61,7 @@ body {
   top: 0px;
 }
 
-.blue-text {
+.colored-text {
   color: #008083;
   font-size: 35px;
   font-weight: 700;
@@ -257,4 +257,90 @@ body {
 .content-09 {
   display: flex;
   justify-content: center;
+}
+
+.content-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  margin-top: 75px;
+}
+
+.content-10-box-text {
+  font-size: 95px;
+  color: #008083;
+  font-weight: 700;
+}
+
+.content-10-box {
+  display: flex;
+  align-items: center;
+  border-radius: 376px;
+  background: rgb(210, 240, 240);
+}
+
+.content-10-box-1 {
+  padding: 54px 105px 54px 150px;
+  gap: 124px;
+}
+
+.content-10-box-2 {
+  padding: 52px 158px 52px 150px;
+  gap: 150px;
+}
+
+.content-10-text,
+.content-10-text > * {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 140%;
+  padding-top: 37px;
+}
+
+.content-11 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-11-box {
+  display: flex;
+}
+
+.content-11-sub-box {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  position: relative;
+  top: 126px;
+  right: 26px;
+}
+
+.content-11-sub-box-item {
+  display: flex;
+  justify-content: center;
+  border-radius: 24px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  padding: 9px 60px;
+  background: linear-gradient(
+    99.54deg,
+    rgb(225, 9, 32) -5.518%,
+    rgb(255, 119, 133) 105.556%
+  );
+}
+
+.slide_11_4 {
+  position: relative;
+  top: 20px;
+}
+
+.slide_11_3 {
+  position: relative;
+  top: 86px;
 }

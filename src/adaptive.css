@@ -42,4 +42,27 @@
   .content-09 > img {
     width: 300px;
   }
+
+  .content-10-box-1 > img {
+    width: 200px;
+  }
+
+  .content-10-box-2 > img {
+    width: 200px;
+  }
+
+  .content-10-box-text {
+    font-size: 60px;
+  }
+
+  .slide_11_1 {
+    width: 290px;
+  }
+  .slide_11_2 {
+    width: 290px;
+  }
+
+  .content-11 {
+    align-items: normal;
+  }
 }

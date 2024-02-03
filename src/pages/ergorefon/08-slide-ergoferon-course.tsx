@@ -2,17 +2,19 @@ import React, { FC } from "react";
 import "../../root.css";
 
 import Frame from "../../components/Frame";
-import BlueText from "../../components/BlueText";
+import ColoredText from "../../components/ColoredText";
 import ImageSVG, { ImageType } from "../../components/Image";
 
 const Page: FC = () => {
   return (
     <Frame
+      pageColor="ergoferon"
       headerTitle="ЕРГОФЕРОН"
       headerDescription={
         <>
           Профілактичній курс препарату протягом одного місяця знижує
-          ймовірність повторного захворювання <BlueText>у 2 рази</BlueText>
+          ймовірність повторного захворювання{" "}
+          <ColoredText pageColor="ergoferon">у 2 рази</ColoredText>
         </>
       }
       footerText="Інструкція медичного застосування препарату Ергоферон; Для профілактики вірусних інфекцій захворювань – по 1-2 таблетки на добу. Рекомендований термін профіактичного курсу визначається індивідуально і може ставити 1-6 місяців; О.М. Охотнікова, О.В. Шарікадзе, Сучасні можливості лікування гострих респіраторних вірусних інфекцій у дітей з алергічною патологією, ЗУ «Педіатрія» №1 (40), березень 2017 р.   "

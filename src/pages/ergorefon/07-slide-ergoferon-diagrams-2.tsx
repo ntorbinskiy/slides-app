@@ -1,7 +1,7 @@
 import React from "react";
 import "../../root.css";
 import Frame from "../../components/Frame";
-import BlueText from "../../components/BlueText";
+import ColoredText from "../../components/ColoredText";
 import SubTitle from "../../components/SubTitle";
 import ImageSVG, { ImageType } from "../../components/Image";
 import ColorBlock, { Color } from "../../components/ColorBlocks";
@@ -31,12 +31,14 @@ const colors: Color[] = [
 const test = () => (
   <>
     <Frame
+      pageColor="ergoferon"
       headerTitle="ЕРГОФЕРОН"
       headerDescription={
         <>
-          У <BlueText>85%</BlueText> пацієнтів зменшує ймовірність розвитку
-          бактеріальних ускладнень, що вимагають призначення антибіотикотерапії
-          на тлі ГРВІ, згідно результатам дослідження «Ермітаж»: 8 411 пацієнтів
+          У <ColoredText pageColor="ergoferon">85%</ColoredText> пацієнтів
+          зменшує ймовірність розвитку бактеріальних ускладнень, що вимагають
+          призначення антибіотикотерапії на тлі ГРВІ, згідно результатам
+          дослідження «Ермітаж»: 8 411 пацієнтів
         </>
       }
       footerText='І.А. Мітюряєва, Противірусна терапія при ГРВІ у стримуванні зростання антибіотикорезистентності, ЗУ «Педіатрія» №1 (48), березень 2019 р., с. 8-9; А.В. Возняк, Оптимізація лікування гострих респіраторних інфекцій у дітей, ЗУ «Педіатрія», № 3 (50), 2019 р.; Геппе Н.А. і співавт., Лікування ГРВІ та Грипу в амбулаторно-поліклінічній практиці: результати міжнародної спостережної неінтервенційної програми "Ермітаж«, Терапія, №8 (18), 2017 р.'
@@ -46,8 +48,9 @@ const test = () => (
       <div className="diagram-box-07">
         <div className="blue-rounded-box blue-rounded-box-first">
           <span className="blue-rounded-box-text-1">
-            Всього <BlueText>3,3%</BlueText> пацієнтів отримували АБП на другий
-            і наступні дні лікування <BlueText>Ергофероном</BlueText>
+            Всього <ColoredText pageColor="ergoferon">3,3%</ColoredText>{" "}
+            пацієнтів отримували АБП на другий і наступні дні лікування{" "}
+            <ColoredText pageColor="ergoferon">Ергофероном</ColoredText>
           </span>
         </div>
         <ImageSVG

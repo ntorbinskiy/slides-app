@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import "../../root.css";
 import Frame from "../../components/Frame";
-import BlueText from "../../components/BlueText";
+import ColoredText from "../../components/ColoredText";
 import ImageSVG, { ImageType } from "../../components/Image";
 
 interface PageProps {}
@@ -9,11 +9,13 @@ interface PageProps {}
 const Page: FC<PageProps> = ({}) => {
   return (
     <Frame
+      pageColor="ergoferon"
       headerTitle="ЕРГОФЕРОН"
       headerDescription={
         <>
           ШИРОКИЙ СПЕКТР ПРОТИВІРУСНОЇ АКТИВНОСТІ ДІЄ НА ВСІ РЕСПІРАТОРНІ
-          ВІРУСИ, В ТОМУ ЧИСЛІ Й <BlueText>МІКСТ-ІНФЕКЦІЇ</BlueText>
+          ВІРУСИ, В ТОМУ ЧИСЛІ Й{" "}
+          <ColoredText pageColor="ergoferon">МІКСТ-ІНФЕКЦІЇ</ColoredText>
         </>
       }
       footerText="Інструкція медичного застосування препарату Ергоферон;"
