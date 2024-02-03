@@ -112,4 +112,8 @@
   .content-22-colors {
     right: 67px;
   }
+
+  .content-23 > img {
+    width: 970px;
+  }
 }

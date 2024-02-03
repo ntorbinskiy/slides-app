@@ -485,3 +485,9 @@ body {
   position: relative;
   right: 230px;
 }
+
+.content-23 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
