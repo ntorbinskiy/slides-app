@@ -85,7 +85,7 @@ body {
   left: 46px;
   align-items: center;
   grid-template-columns: 43px auto;
-  gap: 10px;
+  gap: 30px;
 }
 
 .footer-line {
@@ -551,4 +551,25 @@ body {
   flex-direction: column;
   bottom: 50px;
   left: 130px;
+}
+
+.content-39 {
+  margin-top: 155px;
+}
+
+.content-40 {
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-40-colors {
+  flex-direction: column;
+  position: absolute;
+  bottom: 58px;
+  left: 55px;
+}
+
+.content-40-footer {
+  bottom: 102px;
+  left: 500px;
 }

@@ -128,4 +128,14 @@
     bottom: 13px;
     left: -276px;
   }
+
+  .content-40-colors {
+    position: relative;
+    left: -280px;
+    bottom: -20px;
+  }
+
+  .content-40-footer {
+    left: unset;
+  }
 }

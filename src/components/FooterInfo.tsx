@@ -5,7 +5,7 @@ interface Props {
   readonly text: React.ReactNode;
   readonly hideFooterTriangle?: boolean;
   readonly pageColor: string;
-  readonly footerStyle?: Object;
+  readonly footerStyle?: string;
 }
 
 interface FooterTheme {
@@ -49,10 +49,9 @@ const colors: FooterTheme = {
 };
 
 const FooterInfo: React.FC<Props> = (props) => {
-  const styles = props.footerStyle;
   return (
     <>
-      <div className="footer-info" style={styles}>
+      <div className={`footer-info ${props.footerStyle}`}>
         <ImageSVG type={ImageType.FooterInfoIcon}></ImageSVG>
         <span>{props.text}</span>
       </div>
