@@ -2,7 +2,7 @@ import React from "react";
 import ImageSVG, { ImageType } from "./Image";
 
 interface Props {
-  readonly text: string;
+  readonly text: React.ReactNode;
   readonly hideFooterTriangle?: boolean;
   readonly pageColor: string;
 }

@@ -103,7 +103,13 @@
   .content-22 > img,
   .content-18 > img,
   .content-31 > img,
-  .slide_17_1 {
+  .slide_17_1,
+  .content-32 > img,
+  .content-34 > img,
+  .content-36 > img,
+  .content-37 > img,
+  .content-39 > img,
+  .content-40 > img {
     width: 900px;
   }
 

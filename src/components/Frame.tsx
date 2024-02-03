@@ -19,7 +19,7 @@ interface Props {
   readonly upperCase?: boolean;
   readonly bodyStyles?: Object;
 
-  readonly footerText: string;
+  readonly footerText: React.ReactNode;
 
   readonly hideFooterTriangle?: boolean;
   readonly kids?: boolean;

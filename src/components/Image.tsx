@@ -61,18 +61,18 @@ import Slide_30_2 from "../images/moon-30.svg";
 import Slide_31_1 from "../images/graph-31.svg";
 import Slide_31_2 from "../images/sleepy-31.svg";
 
-import Slide_32_1 from "../images/graph-31.svg";
+import Slide_32_1 from "../images/graph-32.svg";
 
-import Slide_34_1 from "../images/graph-31.svg";
+import Slide_34_1 from "../images/graph-34.svg";
 
-import Slide_36_1 from "../images/graph-31.svg";
+import Slide_36_1 from "../images/graph-36.svg";
 
-import Slide_37_1 from "../images/graph-31.svg";
+import Slide_37_1 from "../images/graph-37.svg";
 import Slide_37_2 from "../images/blue-hearts-37.svg";
 
-import Slide_39_1 from "../images/graph-31.svg";
+import Slide_39_1 from "../images/graph-39.svg";
 
-import Slide_40_1 from "../images/graph-31.svg";
+import Slide_40_1 from "../images/graph-40.svg";
 
 export const enum ImageType {
   FooterTriangle,
