@@ -361,3 +361,17 @@ body {
 .content-12 > img {
   width: 80%;
 }
+
+.content-13 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.slide_13_1 {
+  width: 60%;
+}
+
+.slide_13_2 {
+  width: 32%;
+}
