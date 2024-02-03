@@ -65,4 +65,14 @@
   .content-11 {
     align-items: normal;
   }
+
+  .content-14-colors {
+    position: relative;
+    bottom: 70px;
+    flex-direction: column;
+  }
+
+  .content-14 > img {
+    width: 68%;
+  }
 }

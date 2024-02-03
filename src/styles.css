@@ -375,3 +375,34 @@ body {
 .slide_13_2 {
   width: 32%;
 }
+
+.bell-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.bell-description {
+  font-size: 24px;
+  font-weight: 700;
+}
+.bell-description span {
+  font-size: 24px;
+}
+
+.content-14 {
+  margin-top: 157px;
+  display: flex;
+  align-items: start;
+}
+
+.content-14 > div {
+  position: relative;
+
+  top: 40px;
+}
+
+.content-14-colors {
+  position: relative;
+  bottom: 76px;
+}
