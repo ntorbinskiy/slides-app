@@ -66,6 +66,14 @@
     align-items: normal;
   }
 
+  .slide_11_6 {
+    display: none;
+  }
+
+  .slide_11_7 {
+    display: none;
+  }
+
   .content-14-colors {
     position: relative;
     bottom: 70px;
@@ -74,5 +82,16 @@
 
   .content-14 > img {
     width: 68%;
+  }
+
+  .slide_15_1 {
+    position: relative;
+    left: 44px;
+    width: 109%;
+  }
+
+  .slide_15_2 {
+    width: 115%;
+    bottom: 322px;
   }
 }

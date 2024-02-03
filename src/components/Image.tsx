@@ -27,6 +27,8 @@ import Slide_11_2 from "../images/right-side-11.svg";
 import Slide_11_3 from "../images/left-side-arrow-11.svg";
 import Slide_11_4 from "../images/right-side-arrow-11.svg";
 import Slide_11_5 from "../images/5-11.svg";
+import Slide_11_6 from "../images/shield-1-11.svg";
+import Slide_11_7 from "../images/shield-2-11.svg";
 
 import Slide_12_1 from "../images/graph-12.svg";
 
@@ -35,11 +37,15 @@ import Slide_13_2 from "../images/woman-13.svg";
 
 import Slide_14_1 from "../images/graph-14.svg";
 
+import Slide_15_1 from "../images/graph-15.svg";
+import Slide_15_2 from "../images/renagalin-15.svg";
+
 export const enum ImageType {
   FooterTriangle,
   FooterInfoIcon,
   FooterHomeIcon,
   HeaderTriangle,
+  BellIcon,
   Slide_07_Diagram,
   Slide_08_shield,
   Slide_08_groupIcon1,
@@ -57,11 +63,14 @@ export const enum ImageType {
   Slide_11_3,
   Slide_11_4,
   Slide_11_5,
+  Slide_11_6,
+  Slide_11_7,
   Slide_12_1,
   Slide_13_1,
   Slide_13_2,
   Slide_14_1,
-  BellIcon,
+  Slide_15_1,
+  Slide_15_2,
 }
 
 export type Props = {
@@ -92,10 +101,14 @@ const typeToUrl: Record<ImageType, string> = {
   [ImageType.Slide_11_3]: Slide_11_3,
   [ImageType.Slide_11_4]: Slide_11_4,
   [ImageType.Slide_11_5]: Slide_11_5,
+  [ImageType.Slide_11_7]: Slide_11_6,
+  [ImageType.Slide_11_6]: Slide_11_7,
   [ImageType.Slide_12_1]: Slide_12_1,
   [ImageType.Slide_13_1]: Slide_13_1,
   [ImageType.Slide_13_2]: Slide_13_2,
   [ImageType.Slide_14_1]: Slide_14_1,
+  [ImageType.Slide_15_1]: Slide_15_1,
+  [ImageType.Slide_15_2]: Slide_15_2,
 };
 
 const ImageSVG: React.FC<Props> = (props) => (

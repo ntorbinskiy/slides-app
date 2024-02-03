@@ -42,6 +42,8 @@ const Page: React.FC = ({}) => {
           <ImageSVG type={ImageType.Slide_11_2} className="slide_11_2" />
         </div>
       </div>
+      <ImageSVG type={ImageType.Slide_11_6} className="slide_11_6" />
+      <ImageSVG type={ImageType.Slide_11_7} className="slide_11_7" />
     </Frame>
   );
 };
