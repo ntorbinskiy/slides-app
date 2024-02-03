@@ -113,7 +113,14 @@
     right: 67px;
   }
 
-  .content-23 > img {
+  .content-23 > img,
+  .content-24 > img,
+  .content-25 > img,
+  .content-26 > img {
     width: 970px;
+  }
+
+  .hearts-25 {
+    display: none;
   }
 }

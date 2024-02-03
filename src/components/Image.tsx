@@ -51,6 +51,7 @@ import Slide_23_1 from "../images/graph-23.svg";
 import Slide_24_1 from "../images/graph-24.svg";
 
 import Slide_25_1 from "../images/graph-25.svg";
+import Slide_25_2 from "../images/hearts-25.svg";
 
 import Slide_26_1 from "../images/graph-26.svg";
 
@@ -91,6 +92,7 @@ export const enum ImageType {
   Slide_23_1,
   Slide_24_1,
   Slide_25_1,
+  Slide_25_2,
   Slide_26_1,
 }
 
@@ -136,6 +138,7 @@ const typeToUrl: Record<ImageType, string> = {
   [ImageType.Slide_23_1]: Slide_23_1,
   [ImageType.Slide_24_1]: Slide_24_1,
   [ImageType.Slide_25_1]: Slide_25_1,
+  [ImageType.Slide_25_2]: Slide_25_2,
   [ImageType.Slide_26_1]: Slide_26_1,
 };
 

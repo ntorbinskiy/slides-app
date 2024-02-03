@@ -486,8 +486,24 @@ body {
   right: 230px;
 }
 
-.content-23 {
+.content-23,
+.content-24 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 70px;
+}
+
+.content-25,
+.content-26 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hearts-25 {
+  position: absolute;
+  top: 33px;
+  right: 27%;
 }
