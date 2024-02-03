@@ -63,16 +63,28 @@ import Slide_31_2 from "../images/sleepy-31.svg";
 
 import Slide_32_1 from "../images/graph-32.svg";
 
+import Slide_33_1 from "../images/diagrams-33.svg";
+
 import Slide_34_1 from "../images/graph-34.svg";
+
+import Slide_35_1 from "../images/schema-35.svg";
+import Slide_35_2 from "../images/tenoten-35.svg";
 
 import Slide_36_1 from "../images/graph-36.svg";
 
 import Slide_37_1 from "../images/graph-37.svg";
 import Slide_37_2 from "../images/blue-hearts-37.svg";
 
+import Slide_38_1 from "../images/cons-38.svg";
+import Slide_38_2 from "../images/anaferon_kids-38.svg";
+
 import Slide_39_1 from "../images/graph-39.svg";
 
 import Slide_40_1 from "../images/graph-40.svg";
+
+import Slide_41_1 from "../images/cons-41.svg";
+import Slide_41_2 from "../images/anaferon-41.svg";
+import Slide_41_3 from "../images/purple-hearts-41.svg";
 
 export const enum ImageType {
   FooterTriangle,
@@ -124,6 +136,14 @@ export const enum ImageType {
   Slide_37_2,
   Slide_39_1,
   Slide_40_1,
+  Slide_33_1,
+  Slide_35_1,
+  Slide_35_2,
+  Slide_38_1,
+  Slide_38_2,
+  Slide_41_1,
+  Slide_41_2,
+  Slide_41_3,
 }
 
 export type Props = {
@@ -181,6 +201,14 @@ const typeToUrl: Record<ImageType, string> = {
   [ImageType.Slide_37_2]: Slide_37_2,
   [ImageType.Slide_39_1]: Slide_39_1,
   [ImageType.Slide_40_1]: Slide_40_1,
+  [ImageType.Slide_33_1]: Slide_33_1,
+  [ImageType.Slide_35_1]: Slide_35_1,
+  [ImageType.Slide_35_2]: Slide_35_2,
+  [ImageType.Slide_38_1]: Slide_38_1,
+  [ImageType.Slide_38_2]: Slide_38_2,
+  [ImageType.Slide_41_1]: Slide_41_1,
+  [ImageType.Slide_41_2]: Slide_41_2,
+  [ImageType.Slide_41_3]: Slide_41_3,
 };
 
 const ImageSVG: React.FC<Props> = (props) => (

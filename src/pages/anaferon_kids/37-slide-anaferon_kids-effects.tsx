@@ -25,7 +25,7 @@ const Page: React.FC = ({}) => {
       headerTitle="АНАФЕРОН"
       headerDescription={<>скорочує тривалість симптомів грві</>}
       footerText={
-        <ol style={{ lineHeight: "140%" }}>
+        <ol className="ol">
           <li>
             Мокія-Сербіна С. А., Чечель В. В., Заболотна Н. И. Гомеопатичні
             препарати у профілактиці та лікуванні ГРВІ у дітей:

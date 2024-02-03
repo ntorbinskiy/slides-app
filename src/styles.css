@@ -581,3 +581,22 @@ body {
   right: 240px;
   left: auto;
 }
+
+.content-38 {
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.slide_38_1 {
+  position: relative;
+  left: -46px;
+  bottom: 86px;
+}
+
+.slide_38_2 {
+  width: 825px;
+}
+
+.ol {
+  line-height: 140%;
+}
