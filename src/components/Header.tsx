@@ -8,6 +8,7 @@ interface Props {
   readonly upperCase?: boolean;
   readonly pageColor: PageColor;
   readonly kids?: boolean;
+  readonly headerStyles?: string;
 }
 
 export const colors = {
@@ -32,7 +33,7 @@ const Header: React.FC<Props> = (props) => {
       >
         <path d="M0 91.5L47.5 0H0V91.5Z" fill={colors[props.pageColor]} />
       </svg>
-      <div className="header">
+      <header className={`header ${props.headerStyles}`}>
         <h1 className="header-title" style={{ color: colors[props.pageColor] }}>
           {props.title}
           {props.kids && <span>Дитячий</span>}
@@ -53,7 +54,7 @@ const Header: React.FC<Props> = (props) => {
             style={{ background: colors[props.pageColor] }}
           ></div>
         </div>
-      </div>
+      </header>
     </>
   );
 };

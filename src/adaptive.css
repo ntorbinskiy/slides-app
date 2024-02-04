@@ -145,4 +145,18 @@
   .slide_38_2 {
     width: 53%;
   }
+
+  .slide_41_1 {
+    width: 46%;
+  }
+
+  .slide_41_2 {
+    width: 53%;
+  }
+
+  .footer-41,
+  .footer-38 {
+    align-items: flex-start;
+    grid-template-columns: 43px 70%;
+  }
 }

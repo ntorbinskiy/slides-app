@@ -582,7 +582,8 @@ body {
   left: auto;
 }
 
-.content-38 {
+.content-38,
+.content-41 {
   display: flex;
   margin-bottom: 56px;
 }
@@ -590,7 +591,12 @@ body {
 .slide_38_1 {
   position: relative;
   left: -46px;
-  bottom: 86px;
+  bottom: 60px;
+}
+
+.slide_41_1 {
+  position: relative;
+  bottom: 60px;
 }
 
 .slide_38_2 {
@@ -599,4 +605,14 @@ body {
 
 .ol {
   line-height: 140%;
+  font-size: 18px;
+}
+
+.divider-41,
+.divider-38 {
+  grid-template-columns: auto 0%;
+}
+
+.content-41 {
+  gap: 56px;
 }

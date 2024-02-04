@@ -10,6 +10,8 @@ const Page: React.FC = ({}) => {
       pageColor="anaferonKids"
       headerTitle="АНАФЕРОН"
       headerDescription={<></>}
+      headerStyles="divider-38"
+      footerStyle="footer-38"
       footerText={
         <ol className="ol">
           <li>

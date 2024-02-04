@@ -18,6 +18,7 @@ interface Props {
   readonly headerDescription: React.ReactNode;
   readonly upperCase?: boolean;
   readonly bodyStyles?: Object;
+  readonly headerStyles?: string;
 
   readonly footerText: React.ReactNode;
   readonly footerStyle?: string;
@@ -36,6 +37,7 @@ const Frame: React.FC<Props> = (props) => (
         upperCase={props.upperCase}
         pageColor={props.pageColor}
         kids={props.kids}
+        headerStyles={props.headerStyles}
       />
       {props.children}
     </div>
