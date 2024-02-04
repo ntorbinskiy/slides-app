@@ -473,7 +473,7 @@ body {
   right: 410px;
 }
 
-.content-22 {
+.content-21 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,28 +481,28 @@ body {
   gap: 63px;
 }
 
-.content-22-colors {
+.content-21-colors {
   position: relative;
   right: 230px;
 }
 
-.content-23,
-.content-24 {
+.content-22,
+.content-23 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 70px;
 }
 
-.content-25,
-.content-26 {
+.content-24,
+.content-25 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
 }
 
-.hearts-25 {
+.hearts-24 {
   position: absolute;
   top: 33px;
   right: 27%;
@@ -515,7 +515,9 @@ body {
 .content-36,
 .content-37,
 .content-39,
-.content-40 {
+.content-40,
+.content-29,
+.content-20 {
   display: flex;
   justify-content: center;
   margin-top: 85px;
@@ -615,4 +617,41 @@ body {
 
 .content-41 {
   gap: 56px;
+}
+
+.slide_35_2 {
+  position: absolute;
+  bottom: 173px;
+  right: 73px;
+}
+
+.content-35-text {
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.content-35-text,
+.content-35-text > span {
+  font-size: 25px;
+}
+.content-35 {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: -340px;
+  margin-top: 22px;
+}
+
+.divider-20 {
+  grid-template-columns: auto 50%;
+}
+
+.slide_09_4 {
+  position: absolute;
+  left: 44%;
+  bottom: 72px;
+}
+
+.divider-25 {
+  grid-template-columns: auto 66%;
 }

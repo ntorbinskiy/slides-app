@@ -25,23 +25,26 @@ const Page: React.FC = ({}) => {
       headerTitle="ТЕНОТЕН"
       headerDescription={
         <>
-          більш ніж у <ColoredText pageColor="tenotenKids">70%</ColoredText>{" "}
-          пацієнтів купує порушення сну <br />
-          та зменшує дратівливість при змінах психоемоційного фону
+          більш ніж у{" "}
+          <ColoredText pageColor="tenotenKids" lowercase>
+            70%
+          </ColoredText>{" "}
+          пацієнтів сприяє усуненню <br />
+          клінічних проявів функціональних порушень
+          <ColoredText pageColor="tenotenKids"> ШКТ</ColoredText>
         </>
       }
-      footerText="1. Л.С. Бабінець. Постінфекційний астеновегетативний синдром: шляхи профілактики та лікування в практиці сімейного лікаря. Здоров’я України. 2019. № 3."
+      footerText="Бабаян М.Л. Сучасні підходи до терапії функціональних розладів шлунково-кишкового тракту у дітей// Лікар 2012 №3 (71)"
       pageColor="tenotenKids"
       kids
     >
       <SubTitle pageColor="tenotenKids">
-        Динаміка поведінкових реакцій у дітей, які приймали
-        <br /> Тенотен дитячий, в період вікових кризів
+        Динаміка частоти скарг у дітей з функціональними
+        <br /> порушеннями ШКТ на тлі лікування Тенотеном дитячим
       </SubTitle>
-
       <div className="content-22">
         <ImageSVG type={ImageType.Slide_22_1} />
-        <ColorBlock colors={colors} className="content-22-colors" />
+        <ColorBlock colors={colors} />
       </div>
     </Frame>
   );

@@ -25,22 +25,23 @@ const Page: React.FC = ({}) => {
       headerTitle="ТЕНОТЕН"
       headerDescription={
         <>
-          більш ніж на <ColoredText pageColor="tenotenKids">80%</ColoredText>{" "}
-          усуває головний біль та <br />
-          емоційну лабільність у пацієнтів з вегетативними дисфункціями.
+          більш ніж у <ColoredText pageColor="tenotenKids">70%</ColoredText>{" "}
+          пацієнтів купує порушення сну <br />
+          та зменшує дратівливість при змінах психоемоційного фону
         </>
       }
-      footerText="М.Ю. Галактіонова, И.Р. Ефективність використання «Тенотен ддитячий» при лікування синдрому вегетатитивної дисфункції у дітей та підлітків. Педіатрія. 2010. Том 89. №1"
+      footerText="1. Л.С. Бабінець. Постінфекційний астеновегетативний синдром: шляхи профілактики та лікування в практиці сімейного лікаря. Здоров’я України. 2019. № 3."
       pageColor="tenotenKids"
       kids
     >
       <SubTitle pageColor="tenotenKids">
-        Динаміка частоти скарг у дітей з вегетативними <br />
-        дисфункціями після курусу терапії Тенотеном дитячим
+        Динаміка поведінкових реакцій у дітей, які приймали
+        <br /> Тенотен дитячий, в період вікових кризів
       </SubTitle>
-      <div className="content-24">
-        <ImageSVG type={ImageType.Slide_24_1} />
-        <ColorBlock colors={colors} />
+
+      <div className="content-21">
+        <ImageSVG type={ImageType.Slide_21_1} />
+        <ColorBlock colors={colors} className="content-21-colors" />
       </div>
     </Frame>
   );

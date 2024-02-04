@@ -22,10 +22,11 @@ const Page: FC<PageProps> = ({}) => {
       hideFooterTriangle
     >
       <div className="content-09">
-        <ImageSVG type={ImageType.Slide_09_1}></ImageSVG>
-        <ImageSVG type={ImageType.Slide_09_3}></ImageSVG>
-        <ImageSVG type={ImageType.Slide_09_2}></ImageSVG>
+        <ImageSVG type={ImageType.Slide_09_1} />
+        <ImageSVG type={ImageType.Slide_09_3} />
+        <ImageSVG type={ImageType.Slide_09_2} />
       </div>
+      <ImageSVG type={ImageType.Slide_09_4} className="slide_09_4" />
     </Frame>
   );
 };

@@ -17,6 +17,7 @@ import Slide_08_2_Icon3 from "../images/08-3-icon-item-2.svg";
 import Slide_09_1 from "../images/left-side-09.svg";
 import Slide_09_2 from "../images/right-side-09.svg";
 import Slide_09_3 from "../images/ergoferon-09.svg";
+import Slide_09_4 from "../images/shield-09.svg";
 
 import Slide_10_1 from "../images/first-10.svg";
 import Slide_10_2 from "../images/second-10.svg";
@@ -44,16 +45,20 @@ import Slide_17_1 from "../images/graph-17.svg";
 
 import Slide_18_1 from "../images/graph-18.svg";
 
+import Slide_20_1 from "../images/modification-20.svg";
+
+import Slide_21_1 from "../images/graph-21.svg";
+
 import Slide_22_1 from "../images/graph-22.svg";
 
 import Slide_23_1 from "../images/graph-23.svg";
 
 import Slide_24_1 from "../images/graph-24.svg";
+import Slide_24_2 from "../images/hearts-24.svg";
 
 import Slide_25_1 from "../images/graph-25.svg";
-import Slide_25_2 from "../images/hearts-25.svg";
 
-import Slide_26_1 from "../images/graph-26.svg";
+import Slide_29_1 from "../images/modification-29.svg";
 
 import Slide_30_1 from "../images/graph-30.svg";
 import Slide_30_2 from "../images/moon-30.svg";
@@ -119,12 +124,11 @@ export const enum ImageType {
   Slide_15_2,
   Slide_17_1,
   Slide_18_1,
+  Slide_20_1,
   Slide_22_1,
   Slide_23_1,
   Slide_24_1,
   Slide_25_1,
-  Slide_25_2,
-  Slide_26_1,
   Slide_30_1,
   Slide_30_2,
   Slide_31_1,
@@ -144,6 +148,10 @@ export const enum ImageType {
   Slide_41_1,
   Slide_41_2,
   Slide_41_3,
+  Slide_29_1,
+  Slide_21_1,
+  Slide_09_4,
+  Slide_24_2,
 }
 
 export type Props = {
@@ -188,8 +196,6 @@ const typeToUrl: Record<ImageType, string> = {
   [ImageType.Slide_23_1]: Slide_23_1,
   [ImageType.Slide_24_1]: Slide_24_1,
   [ImageType.Slide_25_1]: Slide_25_1,
-  [ImageType.Slide_25_2]: Slide_25_2,
-  [ImageType.Slide_26_1]: Slide_26_1,
   [ImageType.Slide_30_1]: Slide_30_1,
   [ImageType.Slide_30_2]: Slide_30_2,
   [ImageType.Slide_31_1]: Slide_31_1,
@@ -209,6 +215,11 @@ const typeToUrl: Record<ImageType, string> = {
   [ImageType.Slide_41_1]: Slide_41_1,
   [ImageType.Slide_41_2]: Slide_41_2,
   [ImageType.Slide_41_3]: Slide_41_3,
+  [ImageType.Slide_29_1]: Slide_29_1,
+  [ImageType.Slide_21_1]: Slide_21_1,
+  [ImageType.Slide_09_4]: Slide_09_4,
+  [ImageType.Slide_20_1]: Slide_20_1,
+  [ImageType.Slide_24_2]: Slide_24_2,
 };
 
 const ImageSVG: React.FC<Props> = (props) => (
