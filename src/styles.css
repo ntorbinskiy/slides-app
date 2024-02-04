@@ -507,7 +507,8 @@ body {
   top: 33px;
   right: 27%;
 }
-
+.content-20,
+.content-29,
 .content-30,
 .content-31,
 .content-32,
@@ -515,9 +516,7 @@ body {
 .content-36,
 .content-37,
 .content-39,
-.content-40,
-.content-29,
-.content-20 {
+.content-40 {
   display: flex;
   justify-content: center;
   margin-top: 85px;
@@ -610,11 +609,6 @@ body {
   font-size: 18px;
 }
 
-.divider-41,
-.divider-38 {
-  grid-template-columns: auto 0%;
-}
-
 .content-41 {
   gap: 56px;
 }
@@ -642,10 +636,6 @@ body {
   margin-top: 22px;
 }
 
-.divider-20 {
-  grid-template-columns: auto 50%;
-}
-
 .slide_09_4 {
   position: absolute;
   left: 44%;
@@ -654,4 +644,107 @@ body {
 
 .divider-25 {
   grid-template-columns: auto 66%;
+}
+
+.divider-35 {
+  grid-template-columns: auto 48%;
+}
+
+.content-33 {
+  margin-top: 60px;
+}
+
+.divider-33 {
+  grid-template-columns: auto 69%;
+}
+
+.divider-41,
+.divider-38 {
+  grid-template-columns: auto 0%;
+}
+
+.divider-20 {
+  grid-template-columns: auto 50%;
+}
+
+.divider-28 {
+  grid-template-columns: auto 34%;
+}
+
+.divider-26 {
+  grid-template-columns: auto 45%;
+}
+
+.content-28 {
+  display: grid;
+  row-gap: 10px;
+
+  grid-template-areas:
+    "title1 . ."
+    "box1 . tenoten"
+    "title2 . tenoten"
+    "box2 . .";
+}
+
+.content-28 > span {
+  font-weight: 700;
+}
+
+.box1-28 {
+  position: relative;
+  right: 46px;
+  border-radius: 0 376px 376px 0;
+  padding: 38px 50px;
+  background: rgb(231, 255, 192);
+  grid-area: box1;
+}
+
+.box2-28 {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: -2;
+  border-radius: 0 376px 376px 0;
+  padding: 72px 130px 40px 70px;
+  background: rgb(231, 255, 192);
+  grid-area: box2;
+}
+
+.tenoten-28 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  grid-area: tenoten;
+}
+
+.title1-28 {
+  grid-area: title1;
+}
+
+.title2-28 {
+  grid-area: title2;
+}
+
+.slide_24_2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.footer-28 {
+  left: unset;
+  right: 223px;
+}
+
+.slide_26_1 {
+  position: absolute;
+  right: 60px;
+  top: 84px;
+}
+
+.title-26 {
+  font-size: 35px;
 }

@@ -9,7 +9,7 @@ const Page: React.FC = ({}) => {
     <Frame
       pageColor="tenoten"
       headerTitle="ТЕНОТЕН"
-      headerStyles=""
+      headerStyles="divider-33"
       headerDescription={
         <>
           Разом із стандартною терапією сердцево-судинних захворювань

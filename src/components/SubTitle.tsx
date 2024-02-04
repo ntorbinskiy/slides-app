@@ -5,12 +5,13 @@ import { colors } from "./Header";
 interface Props {
   readonly children: React.ReactNode;
   readonly pageColor: PageColor;
+  readonly className?: string;
 }
 
-const SubTitle: React.FC<Props> = ({ children, pageColor }) => {
+const SubTitle: React.FC<Props> = ({ children, pageColor, className }) => {
   return (
     <h2
-      className="subtitle"
+      className={`subtitle ${className ?? ""}`}
       style={{
         color: colors[pageColor],
         fontWeight:
