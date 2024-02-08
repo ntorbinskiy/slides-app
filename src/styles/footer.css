@@ -1,0 +1,23 @@
+.content-40-footer {
+  bottom: 75px;
+  left: 500px;
+  align-items: flex-start;
+}
+
+.content-37-footer {
+  align-items: flex-start;
+  position: absolute;
+  right: 240px;
+  left: auto;
+}
+
+.footer-28 {
+  left: unset;
+  right: 223px;
+}
+
+.footer-19 {
+  left: unset;
+  right: 203px;
+  bottom: 42px;
+}

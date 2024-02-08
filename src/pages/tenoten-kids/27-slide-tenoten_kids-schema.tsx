@@ -1,6 +1,6 @@
 import React from "react";
 import Frame from "../../components/Frame";
-import "../../root.css";
+import "../../styles/root.css";
 import ImageSVG, { ImageType } from "../../components/Image";
 import SubTitle from "../../components/SubTitle";
 
@@ -9,7 +9,7 @@ const Page: React.FC = ({}) => {
     <Frame
       pageColor="tenotenKids"
       headerTitle="ТЕНОТЕН"
-      headerStyles="divider-28"
+      headerStyles={34}
       headerDescription={<>Чому саме Тенотен дитячий?</>}
       footerText={
         <>

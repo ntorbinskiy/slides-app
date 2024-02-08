@@ -1,6 +1,6 @@
 import React from "react";
 import Frame from "../../components/Frame";
-import "../../root.css";
+import "../../styles/root.css";
 import SubTitle from "../../components/SubTitle";
 import ImageSVG, { ImageType } from "../../components/Image";
 
@@ -9,7 +9,7 @@ const Page: React.FC = ({}) => {
     <Frame
       pageColor="anaferon"
       headerTitle="АНАФЕРОН"
-      headerStyles="divider-41"
+      headerStyles={0}
       headerDescription={<></>}
       footerStyle="footer-41"
       footerText={

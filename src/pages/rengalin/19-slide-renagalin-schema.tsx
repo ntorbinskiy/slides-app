@@ -1,65 +1,20 @@
 import React from "react";
-import ImageSVG, { ImageType } from "./Image";
+import Frame from "../../components/Frame";
+import "../../styles/root.css";
+import ImageSVG, { ImageType } from "../../components/Image";
 
-interface Props {
-  readonly text: React.ReactNode;
-  readonly hideFooterTriangle?: boolean;
-  readonly pageColor: string;
-  readonly footerStyle?: string;
-}
-
-interface FooterTheme {
-  [key: string]: {
-    footerLine: string;
-    footerTriangle: string[];
-  };
-}
-
-const colors: FooterTheme = {
-  ergoferon: {
-    footerLine:
-      "linear-gradient(183.47deg, rgb(0, 128, 131) -35.279%,rgb(63, 190, 193) 93.817%)",
-    footerTriangle: ["rgb(0, 128, 131)", "rgb(63, 190, 193)"],
-  },
-  rengalin: {
-    footerLine:
-      "linear-gradient(133.61deg, rgb(225, 9, 32) -23.74%,rgba(225, 9, 32, 0) 145.222%)",
-    footerTriangle: ["rgb(231, 14, 0)", "rgb(255, 119, 119)"],
-  },
-  tenotenKids: {
-    footerLine:
-      "linear-gradient(133.61deg, rgb(124, 199, 0) -23.74%,rgba(165, 215, 6, 0.38) 80.611%,rgba(169, 225, 9, 0) 145.222%)",
-    footerTriangle: ["rgb(124, 199, 0)", "rgb(198, 245, 121)"],
-  },
-  tenoten: {
-    footerLine:
-      "linear-gradient(133.61deg, rgb(25, 160, 86) -23.74%,rgba(47, 215, 6, 0.38) 80.611%,rgba(78, 225, 9, 0) 145.222%)",
-    footerTriangle: ["rgb(3, 158, 0)", "rgb(159, 255, 168)"],
-  },
-  anaferonKids: {
-    footerLine:
-      "linear-gradient(133.61deg, rgb(0, 136, 212) -23.74%,rgba(6, 177, 215, 0.38) 80.611%,rgba(9, 173, 225, 0) 145.222%)",
-    footerTriangle: ["rgb(16, 145, 218)", "rgb(125, 197, 237)"],
-  },
-  anaferon: {
-    footerLine:
-      "linear-gradient(133.61deg, rgb(81, 106, 207) -23.74%,rgb(169, 186, 255) 80.611%,rgb(236, 240, 255) 145.222%)",
-    footerTriangle: ["rgb(81, 106, 207)", "rgb(159, 178, 255)"],
-  },
-};
-
-const FooterInfo: React.FC<Props> = (props) => {
+const Page: React.FC = ({}) => {
   return (
     <>
-      <div className={`footer-info ${props.footerStyle}`}>
+      <div className="content-19">
+        <ImageSVG type={ImageType.Slide_19_1} className="slide_19_1" />
+        <ImageSVG type={ImageType.Slide_19_2} className="slide_19_2" />
+      </div>
+      <div className="footer-info footer-19">
         <ImageSVG type={ImageType.FooterInfoIcon}></ImageSVG>
-        <span>{props.text}</span>
+        <span>Інструкція для медичного застосування препарату Ренгалін</span>
       </div>
 
-      <div
-        className="footer-line"
-        style={{ background: colors[props.pageColor].footerLine }}
-      ></div>
       <svg
         width="73.000000"
         height="73.000000"
@@ -67,11 +22,6 @@ const FooterInfo: React.FC<Props> = (props) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="footer-home-icon"
-        onClick={() => {
-          //   Proxima.openSlide("medicine-list")
-          //     .then((result) => {})
-          //     .catch((err) => {});
-        }}
       >
         <desc>Created with Pixso.</desc>
         <defs>
@@ -114,7 +64,7 @@ const FooterInfo: React.FC<Props> = (props) => {
         <path
           id="Vector"
           d="M28.1704 22.1343C30.9507 19.9062 33.707 17.6477 36.5 15.4349C39.688 17.9562 42.8364 20.5295 46.0024 23.0801C43.4038 25.6039 40.8735 28.1975 38.3013 30.748C37.146 31.9261 35.9438 33.0586 34.8218 34.2684C33.688 34.3167 32.5532 34.2456 31.4204 34.3014C30.7061 34.3383 30.0864 34.9578 30.042 35.67C29.9922 36.8037 30.0557 37.9399 30.0151 39.0736C28.4878 40.5133 27.0396 42.0342 25.5439 43.5068C24.8901 44.1301 24.3101 44.8385 23.5635 45.3578C23.5332 39.8849 23.561 34.4106 23.5493 28.9376C23.5659 28.4413 23.373 27.9297 22.9707 27.6237C22.6646 27.3571 22.2432 27.3253 21.8623 27.2543C23.9331 25.5099 26.0747 23.8494 28.1704 22.1343Z"
-          fill={colors[props.pageColor].footerTriangle[0]}
+          fill="rgb(231, 14, 0)"
           fill-opacity="1.000000"
           fill-rule="nonzero"
         />
@@ -122,7 +72,7 @@ const FooterInfo: React.FC<Props> = (props) => {
           <path
             id="Vector"
             d="M13.0962 0L59.5405 0C61.9907 0.13208 64.3599 1.19458 66.1006 2.92114C64.0781 5.0083 61.9946 7.03699 59.9482 9.10254C56.6895 12.3601 53.4307 15.619 50.1714 18.8767C49.4951 19.5444 48.8423 20.2375 48.1401 20.8787C44.6147 18.0515 41.1021 15.209 37.5854 12.3716C37.2466 12.1012 36.8262 11.8943 36.3809 11.9412C35.7612 11.9844 35.3169 12.468 34.856 12.8274C28.9995 17.5525 23.1431 22.2777 17.2842 26.9991C16.896 27.3254 16.4492 27.6034 16.1582 28.03C15.7319 28.6813 15.9448 29.636 16.5898 30.0651C16.9478 30.3265 17.4077 30.3456 17.834 30.3469C18.7227 30.3456 19.6113 30.3317 20.5 30.3456C20.5063 36.4304 20.5063 42.5154 20.5 48.6002C18.8535 50.1312 17.3096 51.7715 15.7051 53.3457C12.7725 56.2581 9.87793 59.2084 6.92383 62.0991C5.22021 60.389 4.17773 58.0696 4 55.6638L4 9.33618C4.19287 6.63843 5.49023 4.03711 7.58252 2.31311C9.12891 0.995361 11.0918 0.248779 13.0962 0Z"
-            fill={colors[props.pageColor].footerTriangle[0]}
+            fill="rgb(231, 14, 0)"
             fill-opacity="1.000000"
             fill-rule="nonzero"
           />
@@ -136,7 +86,7 @@ const FooterInfo: React.FC<Props> = (props) => {
           <path
             id="Vector"
             d="M66.1006 2.92114C67.7456 4.51184 68.7168 6.70691 69 8.96289L69 56.0371C68.7485 57.9718 68.0186 59.8608 66.7583 61.3652C65.1128 63.4105 62.6323 64.6914 60.0386 65L12.9629 65C10.7085 64.7168 8.51221 63.7444 6.92383 62.0991C9.87793 59.2084 12.7725 56.2579 15.7051 53.3457C17.3101 51.7715 18.8535 50.1312 20.5 48.6001C20.5205 49.6234 20.4736 50.6479 20.5205 51.6699C20.5522 52.49 21.3442 53.1196 22.1455 53.0651C31.4575 53.0702 40.771 53.0613 50.083 53.0688C50.7505 53.0664 51.543 53.1577 52.0469 52.6169C52.585 52.1117 52.4976 51.322 52.5 50.653C52.4951 43.8838 52.4937 37.1147 52.5 30.3456C53.4751 30.3278 54.4502 30.3557 55.4248 30.3405C55.8896 30.3456 56.3706 30.1881 56.6782 29.8263C57.1616 29.3046 57.1948 28.4272 56.7339 27.8801C56.396 27.4941 55.9658 27.2085 55.5747 26.8823C53.0981 24.8789 50.6108 22.8883 48.1406 20.8787C48.8423 20.2375 49.4951 19.5444 50.1719 18.8766C53.4307 15.619 56.6895 12.3601 59.9482 9.10254C61.9946 7.03699 64.0781 5.0083 66.1006 2.92114Z"
-            fill={colors[props.pageColor].footerTriangle[1]}
+            fill="rgb(255, 119, 119)"
             fill-opacity="1.000000"
             fill-rule="nonzero"
           />
@@ -151,7 +101,7 @@ const FooterInfo: React.FC<Props> = (props) => {
         <path
           id="Vector"
           d="M38.3018 30.748C40.8735 28.1975 43.4038 25.6039 46.0024 23.0801C47.7139 24.4728 49.4619 25.8248 51.144 27.2531C50.2871 27.2556 49.4277 27.8967 49.4556 28.8082C49.4404 35.8782 49.458 42.947 49.4468 50.017C47.291 50.0221 45.1343 50.0208 42.9771 50.017C42.9697 45.3185 42.9785 40.6187 42.9736 35.9202C42.9951 35.3628 42.7271 34.7941 42.2383 34.5084C41.7725 34.2303 41.209 34.29 40.6895 34.2799C38.7334 34.2761 36.7769 34.3002 34.8218 34.2684C35.9438 33.0586 37.1465 31.9261 38.3018 30.748Z"
-          fill={colors[props.pageColor].footerTriangle[1]}
+          fill="rgb(255, 119, 119)"
           fill-opacity="1.000000"
           fill-rule="nonzero"
         />
@@ -165,7 +115,7 @@ const FooterInfo: React.FC<Props> = (props) => {
         <path
           id="Vector"
           d="M33.0771 37.3306C35.3589 37.3293 37.6411 37.328 39.9229 37.3306C39.9326 41.5593 39.9277 45.7882 39.9253 50.017C37.6411 50.0208 35.3589 50.0208 33.0747 50.017C33.0708 45.7882 33.0659 41.5593 33.0771 37.3306Z"
-          fill={colors[props.pageColor].footerTriangle[1]}
+          fill="rgb(255, 119, 119)"
           fill-opacity="1.000000"
           fill-rule="nonzero"
         />
@@ -179,7 +129,7 @@ const FooterInfo: React.FC<Props> = (props) => {
         <path
           id="Vector"
           d="M25.5439 43.5068C27.0391 42.0342 28.4878 40.5133 30.0151 39.0736C30.0391 42.7209 30.0225 46.3683 30.0225 50.017C27.8657 50.0221 25.71 50.0208 23.5532 50.017C23.5557 48.4644 23.5342 46.9104 23.5635 45.3578C24.3096 44.8385 24.8901 44.1301 25.5439 43.5068Z"
-          fill={colors[props.pageColor].footerTriangle[1]}
+          fill="rgb(255, 119, 119)"
           fill-opacity="1.000000"
           fill-rule="nonzero"
         />
@@ -191,40 +141,8 @@ const FooterInfo: React.FC<Props> = (props) => {
           fill-rule="evenodd"
         />
       </svg>
-
-      {props.hideFooterTriangle ?? (
-        <svg
-          width="255"
-          height="646"
-          viewBox="0 0 255 646"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="big-ocean-triangle"
-        >
-          <path
-            d="M-37.0854 749.18L334.065 -51.4408L506.033 -103.48V733.329L-37.0854 749.18Z"
-            fill="url(#paint0_linear_58_254)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_58_254"
-              x1="280.501"
-              y1="-420.494"
-              x2="302.148"
-              y2="704.53"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color={colors[props.pageColor].footerTriangle[0]} />
-              <stop
-                offset="1"
-                stop-color={colors[props.pageColor].footerTriangle[1]}
-              />
-            </linearGradient>
-          </defs>
-        </svg>
-      )}
     </>
   );
 };
 
-export default FooterInfo;
+export default Page;

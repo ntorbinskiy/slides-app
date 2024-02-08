@@ -18,7 +18,7 @@ interface Props {
   readonly headerDescription: React.ReactNode;
   readonly upperCase?: boolean;
   readonly bodyStyles?: Object;
-  readonly headerStyles?: string;
+  readonly headerStyles?: number;
 
   readonly footerText: React.ReactNode;
   readonly footerStyle?: string;

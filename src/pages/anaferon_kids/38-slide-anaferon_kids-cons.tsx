@@ -1,6 +1,6 @@
 import React from "react";
 import Frame from "../../components/Frame";
-import "../../root.css";
+import "../../styles/root.css";
 import SubTitle from "../../components/SubTitle";
 import ImageSVG, { ImageType } from "../../components/Image";
 
@@ -10,7 +10,7 @@ const Page: React.FC = ({}) => {
       pageColor="anaferonKids"
       headerTitle="АНАФЕРОН"
       headerDescription={<></>}
-      headerStyles="divider-38"
+      headerStyles={0}
       footerStyle="footer-38"
       footerText={
         <ol className="ol">

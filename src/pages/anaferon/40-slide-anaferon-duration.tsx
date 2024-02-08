@@ -1,6 +1,6 @@
 import React from "react";
 import Frame from "../../components/Frame";
-import "../../root.css";
+import "../../styles/root.css";
 import SubTitle from "../../components/SubTitle";
 import ImageSVG, { ImageType } from "../../components/Image";
 import ColorBlock, { Color } from "../../components/ColorBlocks";

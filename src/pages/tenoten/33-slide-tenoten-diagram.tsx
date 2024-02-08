@@ -1,6 +1,6 @@
 import React from "react";
 import Frame from "../../components/Frame";
-import "../../root.css";
+import "../../styles/root.css";
 import ColoredText from "../../components/ColoredText";
 import ImageSVG, { ImageType } from "../../components/Image";
 
@@ -9,7 +9,7 @@ const Page: React.FC = ({}) => {
     <Frame
       pageColor="tenoten"
       headerTitle="ТЕНОТЕН"
-      headerStyles="divider-33"
+      headerStyles={69}
       headerDescription={
         <>
           Разом із стандартною терапією сердцево-судинних захворювань

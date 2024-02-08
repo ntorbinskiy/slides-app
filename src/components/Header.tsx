@@ -8,7 +8,7 @@ interface Props {
   readonly upperCase?: boolean;
   readonly pageColor: PageColor;
   readonly kids?: boolean;
-  readonly headerStyles?: string;
+  readonly headerStyles?: number;
 }
 
 export const colors = {
@@ -19,6 +19,8 @@ export const colors = {
   anaferonKids: "rgb(0, 136, 212)",
   anaferon: "rgb(81, 106, 207)",
 };
+
+const DividerBasicWidth = 70;
 
 const Header: React.FC<Props> = (props) => {
   return (
@@ -33,7 +35,14 @@ const Header: React.FC<Props> = (props) => {
       >
         <path d="M0 91.5L47.5 0H0V91.5Z" fill={colors[props.pageColor]} />
       </svg>
-      <header className={`header ${props.headerStyles}`}>
+      <header
+        className="header"
+        style={{
+          gridTemplateColumns: `auto ${
+            props.headerStyles ?? DividerBasicWidth
+          }%`,
+        }}
+      >
         <h1 className="header-title" style={{ color: colors[props.pageColor] }}>
           {props.title}
           {props.kids && <span>Дитячий</span>}

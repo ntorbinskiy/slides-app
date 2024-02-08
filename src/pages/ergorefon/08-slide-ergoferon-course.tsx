@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import "../../root.css";
+import "../../styles/root.css";
 
 import Frame from "../../components/Frame";
 import ColoredText from "../../components/ColoredText";
