@@ -18,7 +18,7 @@ interface FooterTheme {
 const colors: FooterTheme = {
   ergoferon: {
     footerLine:
-      "linear-gradient(183.47deg, rgb(0, 128, 131) -35.279%,rgb(63, 190, 193) 93.817%)",
+      "linear-gradient(133.61deg, rgb(0, 128, 131) -23.74%,rgba(9, 225, 186, 0) 145.222%)",
     footerTriangle: ["rgb(0, 128, 131)", "rgb(63, 190, 193)"],
   },
   rengalin: {

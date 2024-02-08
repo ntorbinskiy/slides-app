@@ -10,6 +10,7 @@ const Page: React.FC = ({}) => {
       pageColor="ergoferon"
       headerTitle="ЕРГОФЕРОН"
       headerDescription={<>СХЕМА ПРИЙОМУ</>}
+      headerStyles={19}
       footerText="* Інструкція для медичного застосування лікарського засобу."
     >
       <div className="content-10">
