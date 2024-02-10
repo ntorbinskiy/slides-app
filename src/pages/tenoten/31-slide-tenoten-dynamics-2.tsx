@@ -11,7 +11,7 @@ const Page: React.FC = ({}) => {
       headerTitle="ТЕНОТЕН"
       headerDescription={
         <>
-          Більш ніж на <ColoredText pageColor="tenoten">15%</ColoredText>{" "}
+          більш ніж на <ColoredText pageColor="tenoten">15%</ColoredText>{" "}
           скорочує скарги з боку серцево
           <br /> судинної системи (кардіалгії, перебої в роботі серця)
         </>
@@ -22,7 +22,7 @@ const Page: React.FC = ({}) => {
       <ImageSVG type={ImageType.Slide_31_2} className="slide_31_2" />
       <SubTitle pageColor="tenoten">
         Динаміка соматовегетативних симптомів
-        <br /> на фоні прийому препарату Тенотен.
+        <br /> на фоні прийому препарату Тенотен
       </SubTitle>
       <div className="content-31">
         <ImageSVG type={ImageType.Slide_31_1} />

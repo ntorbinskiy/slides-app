@@ -11,20 +11,25 @@ const Page: React.FC = ({}) => {
       pageColor="anaferonKids"
       headerTitle="АНАФЕРОН"
       headerDescription={
-        <>
-          ЗНИЖУЄ РИЗИК ВИНИКНЕННЯ ГРВІ ТА ГРИПУ У ДІТЕЙ
-          <br /> В <ColoredText pageColor="anaferonKids">2,5 РАЗИ</ColoredText>,
-          А В ПОВТОРНИХ ВИПАДКАХ —{" "}
-          <ColoredText pageColor="anaferonKids">В 9 РАЗІВ!</ColoredText>
-        </>
+        <span style={{ textTransform: "lowercase" }}>
+          ЗНИЖУЄ РИЗИК ВИНИКНЕННЯ ГРВІ ТА ГРИПУ У ДІТЕЙ В
+          <br /> В{" "}
+          <ColoredText pageColor="anaferonKids" lowercase>
+            2,5 РАЗИ
+          </ColoredText>
+          , А В ПОВТОРНИХ ВИПАДКАХ —{" "}
+          <ColoredText pageColor="anaferonKids" lowercase>
+            В 9 РАЗІВ!
+          </ColoredText>
+        </span>
       }
       upperCase
       footerText={
         <>
-          Мокія-Сербіна С. А., Чечель В. В., Заболотна Н. И. Гомеопатичні
-          препарати у профілактиці та лікуванні ГРВІ у<br /> дітей: порівняльний
-          аналіз ефективності та безпеки застосування. Сучасна педіатрія. №7
-          2015
+          Мокія-Сербіна С. А., Чечель В. В., Заболотна Н. І. Гомеопатичні
+          препарати у профілактиці та лікуванні ГРВІ у <br />
+          дітей: порівняльний аналіз ефективності та безпеки застосування.
+          Сучасна педіатрія. №7 2015
         </>
       }
       kids

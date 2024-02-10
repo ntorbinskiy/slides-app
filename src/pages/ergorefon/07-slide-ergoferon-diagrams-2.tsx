@@ -36,11 +36,12 @@ const test = () => (
       headerStyles={72}
       headerDescription={
         <>
-          У <ColoredText pageColor="ergoferon">85%</ColoredText> пацієнтів
+          у <ColoredText pageColor="ergoferon">85%</ColoredText> пацієнтів
           зменшує ймовірність розвитку бактеріальних ускладнень, що вимагають
           призначення антибіотикотерапії на тлі{" "}
           <ColoredText pageColor="ergoferon">ГРВІ</ColoredText>
-          <br />, згідно результатам дослідження «Ермітаж»:{" "}
+          <br />, за результатами дослідження{" "}
+          <span style={{ textTransform: "none" }}>«Ермітаж»</span>:{" "}
           <ColoredText pageColor="ergoferon">8 411</ColoredText> пацієнтів
         </>
       }

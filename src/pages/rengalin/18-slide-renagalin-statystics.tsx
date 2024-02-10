@@ -4,15 +4,6 @@ import "../../styles/root.css";
 import ColoredText from "../../components/ColoredText";
 import SubTitle from "../../components/SubTitle";
 import ImageSVG, { ImageType } from "../../components/Image";
-import ColorBlock, { Color } from "../../components/ColorBlocks";
-
-const colors: Color[] = [
-  {
-    text: "Дорослі (n=289)",
-    gradient:
-      "linear-gradient(184.01deg, rgb(231, 14, 0) -15.471%,rgb(255, 119, 119) 92.149%)",
-  },
-];
 
 const Page: React.FC = ({}) => {
   return (
@@ -41,11 +32,10 @@ const Page: React.FC = ({}) => {
       pageColor="rengalin"
     >
       <SubTitle pageColor="rengalin">
-        Частка пацієнтів з тяжкістю кашля 0-1 бал*
+        Частка пацієнтів з тяжкістю кашлю 0-1 бал*
       </SubTitle>
       <div className="content-18">
         <ImageSVG type={ImageType.Slide_18_1} />
-        <ColorBlock colors={colors} className="content-18-colors" />
       </div>
     </Frame>
   );

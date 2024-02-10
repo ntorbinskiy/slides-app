@@ -22,7 +22,7 @@ const Page: React.FC = ({}) => {
       footerStyle="footer-26"
       footerText={
         <>
-          1.Timothy Allen, Rashash Dhoalokia, Sylvia Johnson Clinical and safety
+          Timothy Allen, Rashash Dhoalokia, Sylvia Johnson Clinical and safety
           evaluation of Brillia in patients with anxiety disorder. Clinical and
           Medical Reports. <br /> 26.05.2019.
           <a

@@ -15,12 +15,12 @@ const Page: React.FC = ({}) => {
           <ColoredText pageColor="tenotenKids">70%</ColoredText> пацієнтів
           вегетативні та психоемоційні <br />
           порушення після перенесених{" "}
-          <ColoredText pageColor="tenotenKids">
+          <ColoredText pageColor="tenotenKids" lowercase>
             респіраторних інфекцій
           </ColoredText>
         </>
       }
-      headerStyles="divider-25"
+      headerStyles={66}
       footerText={
         <>
           Мітюряєва І. О. Корекція порушень адаптації як невід'ємний компонент

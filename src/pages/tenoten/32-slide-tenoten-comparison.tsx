@@ -11,11 +11,12 @@ const Page: React.FC = ({}) => {
       headerTitle="ТЕНОТЕН"
       headerDescription={
         <>
-          Потрійна допомога{" "}
-          <ColoredText pageColor="tenoten">нервовій системі</ColoredText>{" "}
-          протитривожна,
-          <br /> вегетотропна, ноотропна в умовах підвищеного{" "}
-          <ColoredText pageColor="tenoten">стресового фону</ColoredText>
+          потрійна допомога{" "}
+          <ColoredText pageColor="tenoten" lowercase>
+            нервовій системі
+          </ColoredText>{" "}
+          в умовах підвищеного стресового фону: протитривожна, вегетотропна,
+          ноотропна
         </>
       }
       footerText={
@@ -27,8 +28,9 @@ const Page: React.FC = ({}) => {
       pageColor="tenoten"
     >
       <SubTitle pageColor="tenoten">
-        одночасний прийом тенотена з антигіпертензивними препаратами допомогає
-        <br /> в
+        одночасний прийом ПРЕПАРАТУ тенотен з антигіпертензивними препаратами{" "}
+        <br />
+        допомогає в
         <span
           className="subtitle"
           style={{ fontWeight: 800, color: "rgb(25, 160, 86)" }}

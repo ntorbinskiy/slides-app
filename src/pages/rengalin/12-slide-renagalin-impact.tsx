@@ -26,9 +26,12 @@ const Page: React.FC = ({}) => {
       headerStyles={66}
       headerDescription={
         <>
-          Чинить протизапальну і протинабрякову дії, в порівнянні з <br />
+          <span style={{ textTransform: "capitalize" }}>Чинить</span>{" "}
+          протизапальну і протинабрякову дії, в порівнянні з <br />
           Фенспіридом зменшує вираженість денного кашлю в{" "}
-          <ColoredText pageColor="rengalin">2,5 рази</ColoredText>
+          <ColoredText pageColor="rengalin" lowercase>
+            2,5 рази
+          </ColoredText>
         </>
       }
       footerText={

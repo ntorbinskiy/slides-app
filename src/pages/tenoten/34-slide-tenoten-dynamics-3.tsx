@@ -10,7 +10,7 @@ const Page: React.FC = ({}) => {
     <Frame
       headerTitle="ТЕНОТЕН"
       headerDescription={
-        <>В 2 рази знижує рівень тривоги з високого до легкого ступеню</>
+        <>в 2 рази знижує рівень тривоги з високого до легкого ступеня</>
       }
       footerText={
         <>
@@ -21,7 +21,7 @@ const Page: React.FC = ({}) => {
       pageColor="tenoten"
     >
       <SubTitle pageColor="tenoten">
-        ДДинаміка вираженості тривоги в групі Тенотен та плацебо <br />
+        Динаміка вираженості тривоги в групі Тенотен та плацебо <br />
         за шкалою Гамільтона (НАМ-М)
       </SubTitle>
       <div className="content-34">

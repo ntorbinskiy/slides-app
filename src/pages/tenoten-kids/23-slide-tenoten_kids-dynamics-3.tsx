@@ -15,7 +15,7 @@ const colors: Color[] = [
   {
     text: <>Після лікування</>,
     gradient:
-      "linear-gradient(183.47deg, rgb(124, 199, 0) -32.656%,rgb(198, 245, 121) 92.306%)",
+      "linear-gradient(183.47deg, rgb(0, 156, 79) -32.656%,rgb(198, 245, 121) 92.306%)",
   },
 ];
 
@@ -35,8 +35,8 @@ const Page: React.FC = ({}) => {
       kids
     >
       <SubTitle pageColor="tenotenKids">
-        Динаміка частоти скарг у дітей з вегетативними <br />
-        дисфункціями після курусу терапії Тенотеном дитячим
+        Динаміка чаСтоти скарг у дітей з вегетативними <br /> дисфункціями після
+        курсу терапії Тенотеном дитячим
       </SubTitle>
       <div className="content-23">
         <ImageSVG type={ImageType.Slide_23_1} />

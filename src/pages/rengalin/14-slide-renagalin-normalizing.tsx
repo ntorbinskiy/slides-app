@@ -25,13 +25,14 @@ const Page: React.FC = ({}) => {
       headerTitle="Ренгалін"
       headerDescription={
         <>
-          Сприяє нормалізації аускультативної картини у{" "}
+          сприяє нормалізації аускультативної картини у{" "}
           <ColoredText pageColor="rengalin">50%</ColoredText>
           <br /> пацієнтів вже на 4-й день, у{" "}
           <ColoredText pageColor="rengalin">85%</ColoredText> – на 7-й день
           лікування
         </>
       }
+      headerStyles={57}
       footerText={
         <>
           М.М.Кочуєва, ЗАСТОСУВАННЯ ПРЕПАРАТУ РЕНГАЛІН —НОВИЙ НАПРЯМОК У

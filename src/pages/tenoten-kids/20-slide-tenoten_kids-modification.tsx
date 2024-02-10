@@ -12,7 +12,7 @@ const Page: React.FC = ({}) => {
       headerStyles={50}
       headerDescription={
         <>
-          Модифікує функціональну активність білку{" "}
+          модифікує функціональну активність білку{" "}
           <ColoredText pageColor="tenotenKids">S-100</ColoredText>
         </>
       }

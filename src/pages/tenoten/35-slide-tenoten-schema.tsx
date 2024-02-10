@@ -9,8 +9,8 @@ const Page: React.FC = ({}) => {
     <Frame
       pageColor="tenoten"
       headerTitle="ТЕНОТЕН"
-      headerDescription={<>КОМПЛЕКСНА ДОПОМОГА НЕРВОВОЇ СИСТЕМИ</>}
-      headerStyles="divider-35"
+      headerDescription={<>потрійна ДОПОМОГА НЕРВОВІЙ СИСТЕМІ</>}
+      headerStyles={48}
       footerText={
         <ol className="ol">
           <li> Інструкція для медичного застосування препарату Тенотен</li>
@@ -24,7 +24,7 @@ const Page: React.FC = ({}) => {
       <ImageSVG type={ImageType.Slide_35_1} className="slide_35_1" />
       <div className="content-35">
         <span className="content-35-text">
-          Максимальна трермін курсу терапії:{" "}
+          Максимальна тривалість курсу терапії:{" "}
           <ColoredText pageColor="tenoten" lowercase>
             6 місяців
           </ColoredText>

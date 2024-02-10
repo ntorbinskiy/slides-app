@@ -9,16 +9,14 @@ const Page: React.FC = ({}) => {
       headerTitle="Ренгалін"
       headerDescription={
         <>
-          Протикашльовий препарат із протизапальною, бронхолітичною <br />{" "}
-          діями, для лікування сухого, вологого та залишкового кашлю
+          Протикашльовий препарат із протизапальною, бронхолітичною
+          <br /> діями для лікування сухого, вологого та залишкового кашлю
         </>
       }
       footerText="Інструкція для медичного застосування препарату Ренгалін"
       pageColor="rengalin"
     >
       <div className="content-11">
-        <ImageSVG type={ImageType.Slide_11_5} />
-
         <div className="content-11-box">
           <ImageSVG type={ImageType.Slide_11_1} className="slide_11_1" />
 
@@ -41,6 +39,7 @@ const Page: React.FC = ({}) => {
 
           <ImageSVG type={ImageType.Slide_11_2} className="slide_11_2" />
         </div>
+        <ImageSVG type={ImageType.Slide_11_5} className="slide_11_5" />
       </div>
       <ImageSVG type={ImageType.Slide_11_6} className="slide_11_6" />
       <ImageSVG type={ImageType.Slide_11_7} className="slide_11_7" />

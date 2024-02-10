@@ -15,7 +15,7 @@ const colors: Color[] = [
   {
     text: <>Після лікування</>,
     gradient:
-      "linear-gradient(183.47deg, rgb(124, 199, 0) -32.656%,rgb(198, 245, 121) 92.306%)",
+      "linear-gradient(183.47deg, rgb(0, 156, 79) -32.656%,rgb(198, 245, 121) 92.306%)",
   },
 ];
 
@@ -34,6 +34,7 @@ const Page: React.FC = ({}) => {
           <ColoredText pageColor="tenotenKids"> ШКТ</ColoredText>
         </>
       }
+      headerStyles={51}
       footerText="Бабаян М.Л. Сучасні підходи до терапії функціональних розладів шлунково-кишкового тракту у дітей// Лікар 2012 №3 (71)"
       pageColor="tenotenKids"
       kids

@@ -11,17 +11,18 @@ const Page: React.FC = ({}) => {
       headerTitle="ТЕНОТЕН"
       headerDescription={
         <>
-          Більш ніж на <ColoredText pageColor="tenoten">50%</ColoredText> знижує
+          більш ніж на <ColoredText pageColor="tenoten">50%</ColoredText> знижує
           ознаки порушення сну
         </>
       }
+      headerStyles={55}
       footerText="О.С.Чабан. Стрес-індуковані порушення в практиці сімейного лікаря. Здоров’я України. №18 2018 р."
       pageColor="tenoten"
     >
       <ImageSVG type={ImageType.Slide_30_2} className="slide_30_2" />
       <SubTitle pageColor="tenoten">
         Динаміка соматовегетативних симптомів
-        <br /> на фоні прийому препарату Тенотен.
+        <br /> на фоні прийому препарату Тенотен
       </SubTitle>
       <div className="content-30">
         <ImageSVG type={ImageType.Slide_30_1} />

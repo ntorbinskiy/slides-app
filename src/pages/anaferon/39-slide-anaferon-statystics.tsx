@@ -2,7 +2,7 @@ import React from "react";
 import Frame from "../../components/Frame";
 import "../../styles/root.css";
 import ColoredText from "../../components/ColoredText";
-import SubTitle from "../../components/SubTitle";
+
 import ImageSVG, { ImageType } from "../../components/Image";
 
 const Page: React.FC = ({}) => {
@@ -17,14 +17,12 @@ const Page: React.FC = ({}) => {
         </>
       }
       footerText={
-        <ol className="ol">
-          <li>
-            Каіра А.І. Не специфічна профілактика грипу та гострих респіраторних
-            вірусних інфекцій препаратів Анаферон. Інфекційні хвороби. 2005 Т.№3
-          </li>
-        </ol>
+        <>
+          Каіра А.І. Не специфічна профілактика грипу та гострих респіраторних
+          вірусних інфекцій препаратів Анаферон. <br /> Інфекційні хвороби. 2005
+          Т.№3
+        </>
       }
-      upperCase
     >
       <div className="content-39">
         <ImageSVG type={ImageType.Slide_39_1} />

@@ -9,9 +9,11 @@ const Page: React.FC = ({}) => {
     <Frame
       pageColor="ergoferon"
       headerTitle="ЕРГОФЕРОН"
-      headerDescription={<>СХЕМА ПРИЙОМУ</>}
+      headerDescription={
+        <span style={{ textTransform: "lowercase" }}>СХЕМА ПРИЙОМУ</span>
+      }
       headerStyles={19}
-      footerText="* Інструкція для медичного застосування лікарського засобу."
+      footerText="Інструкція для медичного застосування лікарського засобу Ергоферон."
     >
       <div className="content-10">
         <div className="content-10-box-1 content-10-box">
@@ -27,6 +29,7 @@ const Page: React.FC = ({}) => {
           ДЛЯ ПРОФІЛАКТИКИ{" "}
           <ColoredText pageColor="ergoferon">1-2 ТАБЛЕТКИ</ColoredText> НА ДОБУ
         </h3>
+        <ImageSVG type={ImageType.Slide_09_3} className="slide_09_3" />
       </div>
     </Frame>
   );

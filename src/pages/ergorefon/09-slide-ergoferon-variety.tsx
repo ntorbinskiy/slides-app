@@ -12,13 +12,15 @@ const Page: FC<PageProps> = ({}) => {
       pageColor="ergoferon"
       headerTitle="ЕРГОФЕРОН"
       headerDescription={
-        <>
+        <span style={{ textTransform: "lowercase" }}>
           ШИРОКИЙ СПЕКТР ПРОТИВІРУСНОЇ АКТИВНОСТІ ДІЄ НА ВСІ РЕСПІРАТОРНІ
           ВІРУСИ, В ТОМУ ЧИСЛІ Й{" "}
-          <ColoredText pageColor="ergoferon">МІКСТ-ІНФЕКЦІЇ</ColoredText>
-        </>
+          <ColoredText pageColor="ergoferon" lowercase>
+            МІКСТ-ІНФЕКЦІЇ
+          </ColoredText>
+        </span>
       }
-      footerText="Інструкція медичного застосування препарату Ергоферон;"
+      footerText="Інструкція для медичного застосування лікарського засобу Ергоферон"
       hideFooterTriangle
     >
       <div className="content-09">

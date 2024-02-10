@@ -27,15 +27,20 @@ const Page: React.FC = ({}) => {
         <>
           скорочує тривалість постінфекційного кашлю до
           <ColoredText pageColor="rengalin">7</ColoredText> днів у{" "}
-          <ColoredText pageColor="rengalin">80% пацієнтів,</ColoredText> завдяки
-          вираженій протизапальній, бронхолітичній та протикашльовій дії
+          <ColoredText pageColor="rengalin" lowercase>
+            80% пацієнтів,
+          </ColoredText>
+          <br />
+          завдяки вираженій протизапальній, бронхолітичній та протикашльовій
+          діям
         </>
       }
+      headerStyles={78}
       footerText="Л.Ф.Матюха, НОВІ НАПРЯМКИ В РЕГУЛЯЦІЇ ВПЛИВУ НА КАШЛЬОВИЙ СИНДРОМ В АМБУЛАТОРНІЙ ПРАКТИЦІ, Новини медицини та фармації № 8 (726), 2020;"
       pageColor="rengalin"
     >
       <SubTitle pageColor="rengalin">
-        індекс кашльового синдрому на 2-му візиті (7й день)
+        індекс кашльового синдрому на 2-му візиті (7-й день)
       </SubTitle>
       <div className="content-17">
         <ImageSVG type={ImageType.Slide_17_1} className="slide_17_1" />

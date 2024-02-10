@@ -12,11 +12,15 @@ const Page: React.FC = ({}) => {
       headerTitle="Ренгалін"
       headerDescription={
         <>
-          Знижує потребу в муколітичній терапії на{" "}
+          знижує потребу в муколітичній терапії на{" "}
           <ColoredText pageColor="rengalin">20%</ColoredText> вже через{" "}
-          <ColoredText pageColor="rengalin">3 дні</ColoredText> лікування
+          <ColoredText pageColor="rengalin" lowercase>
+            3 дні
+          </ColoredText>{" "}
+          лікування
         </>
       }
+      headerStyles={74}
       footerText={
         <>
           Л.Ф. Матюха, Ренгалін: застосування інноваційних технологій у
@@ -39,8 +43,8 @@ const Page: React.FC = ({}) => {
         <BellInfo
           text={
             <>
-              <ColoredText pageColor="rengalin" lowercase>
-                Прийом Ренгаліна
+              <ColoredText pageColor="rengalin" capitalize>
+                Прийом Ренгаліну
               </ColoredText>{" "}
               протягом трьох днів{" "}
               <ColoredText pageColor="rengalin" lowercase>

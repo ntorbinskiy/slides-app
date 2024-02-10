@@ -9,10 +9,9 @@ const Page: React.FC = ({}) => {
     <Frame
       pageColor="tenoten"
       headerTitle="ТЕНОТЕН"
-      headerStyles=""
       headerDescription={
         <>
-          Модифікує функціональну активність білку{" "}
+          модифікує функціональну активність білку{" "}
           <ColoredText pageColor="tenoten">S-100</ColoredText>
         </>
       }

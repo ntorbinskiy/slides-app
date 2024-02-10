@@ -36,7 +36,7 @@ const Page: React.FC = ({}) => {
         </div>
         <div className="tenoten-28">
           <ImageSVG type={ImageType.Slide_24_2} className="slide_24_2" />
-          <ImageSVG type={ImageType.Slide_35_2} className="slide_35_2_28" />
+          <ImageSVG type={ImageType.Slide_28_3} className="slide_35_2_28" />
         </div>
       </div>
     </Frame>

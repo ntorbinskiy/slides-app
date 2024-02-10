@@ -14,10 +14,10 @@ interface Props {
 export const colors = {
   ergoferon: "rgb(0, 128, 131)",
   rengalin: "rgb(225, 9, 32)",
-  tenotenKids: "rgb(124, 199, 0)",
+  tenotenKids: "rgb(0, 156, 79)",
   tenoten: "rgb(25, 160, 86)",
   anaferonKids: "rgb(0, 136, 212)",
-  anaferon: "rgb(81, 106, 207)",
+  anaferon: "rgb(30, 99, 175)",
 };
 
 const DividerBasicWidth = 70;
@@ -43,7 +43,17 @@ const Header: React.FC<Props> = (props) => {
           }%`,
         }}
       >
-        <h1 className="header-title" style={{ color: colors[props.pageColor] }}>
+        <h1
+          className="header-title"
+          style={{
+            color:
+              props.pageColor === "rengalin"
+                ? "black"
+                : colors[props.pageColor],
+            textTransform:
+              props.pageColor === "rengalin" ? "capitalize" : "uppercase",
+          }}
+        >
           {props.title}
           {props.kids && <span>Дитячий</span>}
         </h1>
